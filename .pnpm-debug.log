@@ -1,0 +1,226 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 7,
+    "total": 7,
+    "workspacePrefix": "D:\\code\\yjcode\\try\\vue3"
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@element-plus/components",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.ts",
+      "module": "index.ts",
+      "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "peerDependencies": {
+        "vue": "^3.2.0"
+      },
+      "author": "",
+      "license": "ISC"
+    },
+    "prefix": "D:\\code\\yjcode\\try\\vue3\\packages\\components"
+  },
+  "2 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@element-plus/hooks",
+      "version": "0.0.5",
+      "description": "Element Plus composables",
+      "license": "MIT",
+      "main": "index.ts",
+      "module": "index.ts",
+      "unpkg": "index.js",
+      "jsdelivr": "index.js",
+      "types": "index.d.ts",
+      "peerDependencies": {
+        "vue": "^3.2.0"
+      },
+      "gitHead": "c69724230befa8fede0e6b9c37fb0b7e39fd7cdd"
+    },
+    "prefix": "D:\\code\\yjcode\\try\\vue3\\packages\\hooks"
+  },
+  "3 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@element-plus/theme-chalk",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.ts",
+      "module": "index.ts",
+      "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "peerDependencies": {
+        "vue": "^3.2.0"
+      },
+      "author": "",
+      "license": "ISC"
+    },
+    "prefix": "D:\\code\\yjcode\\try\\vue3\\packages\\theme-chalk"
+  },
+  "4 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@element-plus/utils",
+      "private": true,
+      "license": "MIT",
+      "main": "index.ts",
+      "peerDependencies": {
+        "vue": "^3.2.0"
+      }
+    },
+    "prefix": "D:\\code\\yjcode\\try\\vue3\\packages\\utils"
+  },
+  "5 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@element-plus/utils",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.ts",
+      "module": "index.ts",
+      "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "peerDependencies": {
+        "vue": "^3.2.0"
+      },
+      "author": "",
+      "license": "ISC"
+    },
+    "prefix": "D:\\code\\yjcode\\try\\vue3\\packages\\utils1"
+  },
+  "6 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@element-plus/play",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+      },
+      "author": "",
+      "license": "ISC",
+      "dependencies": {
+        "vue": "^3.2.25"
+      },
+      "devDependencies": {
+        "@vitejs/plugin-vue": "^2.3.3",
+        "vite": "^2.9.12"
+      }
+    },
+    "prefix": "D:\\code\\yjcode\\try\\vue3\\play"
+  },
+  "7 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "vue3",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "workspaces": [
+        "packages/*",
+        "play"
+      ],
+      "scripts": {
+        "dev": "pnpm -C play dev"
+      },
+      "keywords": [],
+      "author": "",
+      "license": "ISC",
+      "dependencies": {
+        "@element-plus/components": "workspace:*",
+        "@element-plus/theme-chalk": "workspace:*",
+        "@element-plus/hook": "workspace:*",
+        "@element-plus/utils": "workspace:*"
+      },
+      "devDependencies": {
+        "typescript": "^4.7.4",
+        "vue": "^3.2.36"
+      }
+    },
+    "prefix": "D:\\code\\yjcode\\try\\vue3"
+  },
+  "8 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "D:\\.pnpm-store\\v3",
+    "virtualStoreDir": "D:\\code\\yjcode\\try\\vue3\\node_modules\\.pnpm"
+  },
+  "9 debug pnpm:stage": {
+    "prefix": "D:\\code\\yjcode\\try\\vue3",
+    "stage": "resolution_started"
+  },
+  "10 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/@vitejs/plugin-vue/2.3.3",
+    "wanted": {
+      "dependentId": "play",
+      "name": "@vitejs/plugin-vue",
+      "rawSpec": "^2.3.3"
+    }
+  },
+  "11 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/vite/2.9.12",
+    "wanted": {
+      "dependentId": "play",
+      "name": "vite",
+      "rawSpec": "^2.9.12"
+    }
+  },
+  "12 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/vue/3.2.36",
+    "wanted": {
+      "dependentId": "play",
+      "name": "vue",
+      "rawSpec": "^3.2.25"
+    }
+  },
+  "13 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/typescript/4.7.4",
+    "wanted": {
+      "dependentId": ".",
+      "name": "typescript",
+      "rawSpec": "^4.7.4"
+    }
+  },
+  "14 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/vue/3.2.36",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vue",
+      "rawSpec": "^3.2.36"
+    }
+  },
+  "15 debug pnpm:_dependency_resolved": {
+    "resolution": "link:packages/components",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@element-plus/components",
+      "rawSpec": "workspace:*"
+    }
+  },
+  "16 debug pnpm:_dependency_resolved": {
+    "resolution": "link:packages/theme-chalk",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@element-plus/theme-chalk",
+      "rawSpec": "workspace:*"
+    }
+  },
+  "17 debug pnpm:_dependency_resolved": {
+    "resolution": "link:packages/utils1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@element-plus/utils",
+      "rawSpec": "workspace:*"
+    }
+  },
+  "18 error pnpm": {
+    "code": "ERR_PNPM_NO_MATCHING_VERSION_INSIDE_WORKSPACE",
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "In : No matching version found for @element-plus/hook@* inside the workspace",
+      "code": "ERR_PNPM_NO_MATCHING_VERSION_INSIDE_WORKSPACE",
+      "stack": "pnpm: In : No matching version found for @element-plus/hook@* inside the workspace\n    at tryResolveFromWorkspace (C:\\Program Files\\nodejs\\node_modules\\pnpm\\dist\\pnpm.cjs:85745:15)\n    at resolveNpm (C:\\Program Files\\nodejs\\node_modules\\pnpm\\dist\\pnpm.cjs:85637:39)\n    at Object.resolve (C:\\Program Files\\nodejs\\node_modules\\pnpm\\dist\\pnpm.cjs:85867:34)\n    at ctx.requestsQueue.add.priority (C:\\Program Files\\nodejs\\node_modules\\pnpm\\dist\\pnpm.cjs:93031:75)\n    at run (C:\\Program Files\\nodejs\\node_modules\\pnpm\\dist\\pnpm.cjs:92792:90)\n    at PQueue._tryToStartAnother (C:\\Program Files\\nodejs\\node_modules\\pnpm\\dist\\pnpm.cjs:92746:13)\n    at C:\\Program Files\\nodejs\\node_modules\\pnpm\\dist\\pnpm.cjs:92805:16\n    at new Promise (<anonymous>)\n    at PQueue.add (C:\\Program Files\\nodejs\\node_modules\\pnpm\\dist\\pnpm.cjs:92787:16)\n    at resolveAndFetch (C:\\Program Files\\nodejs\\node_modules\\pnpm\\dist\\pnpm.cjs:93031:55)"
+    }
+  }
+}

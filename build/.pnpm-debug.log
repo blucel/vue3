@@ -1,0 +1,191 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 4,
+    "total": 5,
+    "workspacePrefix": "D:\\code\\yjcode\\try\\vue3"
+  },
+  "1 debug pnpm:lifecycle": {
+    "depPath": "D:\\code\\yjcode\\try\\vue3\\packages\\utils",
+    "optional": false,
+    "script": "gulp",
+    "stage": "build",
+    "wd": "D:\\code\\yjcode\\try\\vue3\\packages\\utils"
+  },
+  "2 debug pnpm:lifecycle": {
+    "depPath": "D:\\code\\yjcode\\try\\vue3\\packages\\utils",
+    "line": "[\u001b[90m09:48:01\u001b[39m] Requiring external module sucrase/register/ts",
+    "stage": "build",
+    "stdio": "stdout",
+    "wd": "D:\\code\\yjcode\\try\\vue3\\packages\\utils"
+  },
+  "3 debug pnpm:lifecycle": {
+    "depPath": "D:\\code\\yjcode\\try\\vue3\\packages\\utils",
+    "line": "[Function: buildPackages] ------",
+    "stage": "build",
+    "stdio": "stdout",
+    "wd": "D:\\code\\yjcode\\try\\vue3\\packages\\utils"
+  },
+  "4 debug pnpm:lifecycle": {
+    "depPath": "D:\\code\\yjcode\\try\\vue3\\packages\\utils",
+    "line": "[\u001b[90m09:48:03\u001b[39m] Using gulpfile D:\\code\\yjcode\\try\\vue3\\packages\\utils\\gulpfile.ts",
+    "stage": "build",
+    "stdio": "stdout",
+    "wd": "D:\\code\\yjcode\\try\\vue3\\packages\\utils"
+  },
+  "5 debug pnpm:lifecycle": {
+    "depPath": "D:\\code\\yjcode\\try\\vue3\\packages\\utils",
+    "line": "[\u001b[90m09:48:03\u001b[39m] Starting 'default'...",
+    "stage": "build",
+    "stdio": "stdout",
+    "wd": "D:\\code\\yjcode\\try\\vue3\\packages\\utils"
+  },
+  "6 debug pnpm:lifecycle": {
+    "depPath": "D:\\code\\yjcode\\try\\vue3\\packages\\utils",
+    "line": "[\u001b[90m09:48:03\u001b[39m] Starting 'build:D:\\code\\yjcode\\try\\vue3\\packages\\utils'...",
+    "stage": "build",
+    "stdio": "stdout",
+    "wd": "D:\\code\\yjcode\\try\\vue3\\packages\\utils"
+  },
+  "7 debug pnpm:lifecycle": {
+    "depPath": "D:\\code\\yjcode\\try\\vue3\\packages\\utils",
+    "line": "[\u001b[90m09:48:03\u001b[39m] Starting 'build:D:\\code\\yjcode\\try\\vue3\\packages\\utils'...",
+    "stage": "build",
+    "stdio": "stdout",
+    "wd": "D:\\code\\yjcode\\try\\vue3\\packages\\utils"
+  },
+  "8 debug pnpm:lifecycle": {
+    "depPath": "D:\\code\\yjcode\\try\\vue3\\packages\\utils",
+    "line": "D:\\code\\yjcode\\try\\vue3\\build\\tsconfig.json tsConfigtsConfig",
+    "stage": "build",
+    "stdio": "stdout",
+    "wd": "D:\\code\\yjcode\\try\\vue3\\packages\\utils"
+  },
+  "9 debug pnpm:lifecycle": {
+    "depPath": "D:\\code\\yjcode\\try\\vue3\\packages\\utils",
+    "line": "Cannot read file 'D:\\code\\yjcode\\try\\vue3\\build\\tsconfig.json'.",
+    "stage": "build",
+    "stdio": "stdout",
+    "wd": "D:\\code\\yjcode\\try\\vue3\\packages\\utils"
+  },
+  "10 debug pnpm:lifecycle": {
+    "depPath": "D:\\code\\yjcode\\try\\vue3\\packages\\utils",
+    "line": "D:\\code\\yjcode\\try\\vue3\\build\\tsconfig.json tsConfigtsConfig",
+    "stage": "build",
+    "stdio": "stdout",
+    "wd": "D:\\code\\yjcode\\try\\vue3\\packages\\utils"
+  },
+  "11 debug pnpm:lifecycle": {
+    "depPath": "D:\\code\\yjcode\\try\\vue3\\packages\\utils",
+    "line": "Cannot read file 'D:\\code\\yjcode\\try\\vue3\\build\\tsconfig.json'.",
+    "stage": "build",
+    "stdio": "stdout",
+    "wd": "D:\\code\\yjcode\\try\\vue3\\packages\\utils"
+  },
+  "12 debug pnpm:lifecycle": {
+    "depPath": "D:\\code\\yjcode\\try\\vue3\\packages\\utils",
+    "line": "\u001b[31mD:/code/yjcode/try/vue3/node_modules/.pnpm/@types+clean-css@4.2.5/node_modules/@types/clean-css/index.d.ts(11,50): \u001b[39merror TS2792: Cannot find module 'source-map'. Did you mean to set the 'moduleResolution' option to 'node', or to add aliases to the 'paths' option?",
+    "stage": "build",
+    "stdio": "stdout",
+    "wd": "D:\\code\\yjcode\\try\\vue3\\packages\\utils"
+  },
+  "13 debug pnpm:lifecycle": {
+    "depPath": "D:\\code\\yjcode\\try\\vue3\\packages\\utils",
+    "line": "\u001b[31mD:/code/yjcode/try/vue3/node_modules/.pnpm/@types+gulp@4.0.9/node_modules/@types/gulp/index.d.ts(9,27): \u001b[39merror TS2792: Cannot find module 'chokidar'. Did you mean to set the 'moduleResolution' option to 'node', or to add aliases to the 'paths' option?",
+    "stage": "build",
+    "stdio": "stdout",
+    "wd": "D:\\code\\yjcode\\try\\vue3\\packages\\utils"
+  },
+  "14 debug pnpm:lifecycle": {
+    "depPath": "D:\\code\\yjcode\\try\\vue3\\packages\\utils",
+    "line": "\u001b[31mD:/code/yjcode/try/vue3/node_modules/.pnpm/@types+gulp@4.0.9/node_modules/@types/undertaker/index.d.ts(10,27): \u001b[39merror TS2792: Cannot find module 'async-done'. Did you mean to set the 'moduleResolution' option to 'node', or to add aliases to the 'paths' option?",
+    "stage": "build",
+    "stdio": "stdout",
+    "wd": "D:\\code\\yjcode\\try\\vue3\\packages\\utils"
+  },
+  "15 debug pnpm:lifecycle": {
+    "depPath": "D:\\code\\yjcode\\try\\vue3\\packages\\utils",
+    "line": "\u001b[31mwith-install.ts(1,34): \u001b[39merror TS2792: Cannot find module 'vue'. Did you mean to set the 'moduleResolution' option to 'node', or to add aliases to the 'paths' option?",
+    "stage": "build",
+    "stdio": "stdout",
+    "wd": "D:\\code\\yjcode\\try\\vue3\\packages\\utils"
+  },
+  "16 debug pnpm:lifecycle": {
+    "depPath": "D:\\code\\yjcode\\try\\vue3\\packages\\utils",
+    "line": "TypeScript: \u001b[35m4\u001b[39m semantic errors",
+    "stage": "build",
+    "stdio": "stdout",
+    "wd": "D:\\code\\yjcode\\try\\vue3\\packages\\utils"
+  },
+  "17 debug pnpm:lifecycle": {
+    "depPath": "D:\\code\\yjcode\\try\\vue3\\packages\\utils",
+    "line": "[\u001b[90m09:48:55\u001b[39m] 'build:D:\\code\\yjcode\\try\\vue3\\packages\\utils' errored after 52 s",
+    "stage": "build",
+    "stdio": "stderr",
+    "wd": "D:\\code\\yjcode\\try\\vue3\\packages\\utils"
+  },
+  "18 debug pnpm:lifecycle": {
+    "depPath": "D:\\code\\yjcode\\try\\vue3\\packages\\utils",
+    "line": "[\u001b[90m09:48:55\u001b[39m] Error: TypeScript: Compilation failed",
+    "stage": "build",
+    "stdio": "stderr",
+    "wd": "D:\\code\\yjcode\\try\\vue3\\packages\\utils"
+  },
+  "19 debug pnpm:lifecycle": {
+    "depPath": "D:\\code\\yjcode\\try\\vue3\\packages\\utils",
+    "line": "    at Output.mightFinish (D:\\code\\yjcode\\try\\vue3\\node_modules\\.pnpm\\gulp-typescript@6.0.0-alpha.1_typescript@4.7.4\\node_modules\\gulp-typescript\\release\\output.js:131:43)",
+    "stage": "build",
+    "stdio": "stderr",
+    "wd": "D:\\code\\yjcode\\try\\vue3\\packages\\utils"
+  },
+  "20 debug pnpm:lifecycle": {
+    "depPath": "D:\\code\\yjcode\\try\\vue3\\packages\\utils",
+    "line": "    at D:\\code\\yjcode\\try\\vue3\\node_modules\\.pnpm\\gulp-typescript@6.0.0-alpha.1_typescript@4.7.4\\node_modules\\gulp-typescript\\release\\output.js:66:22",
+    "stage": "build",
+    "stdio": "stderr",
+    "wd": "D:\\code\\yjcode\\try\\vue3\\packages\\utils"
+  },
+  "21 debug pnpm:lifecycle": {
+    "depPath": "D:\\code\\yjcode\\try\\vue3\\packages\\utils",
+    "line": "[\u001b[90m09:48:55\u001b[39m] 'default' errored after 52 s",
+    "stage": "build",
+    "stdio": "stderr",
+    "wd": "D:\\code\\yjcode\\try\\vue3\\packages\\utils"
+  },
+  "22 debug pnpm:lifecycle": {
+    "depPath": "D:\\code\\yjcode\\try\\vue3\\packages\\utils",
+    "line": "TypeScript: emit \u001b[36msucceeded\u001b[39m (with errors)",
+    "stage": "build",
+    "stdio": "stdout",
+    "wd": "D:\\code\\yjcode\\try\\vue3\\packages\\utils"
+  },
+  "23 debug pnpm:lifecycle": {
+    "depPath": "D:\\code\\yjcode\\try\\vue3\\packages\\utils",
+    "exitCode": 1,
+    "optional": false,
+    "stage": "build",
+    "wd": "D:\\code\\yjcode\\try\\vue3\\packages\\utils"
+  },
+  "24 info pnpm": {
+    "err": {
+      "name": "Error",
+      "message": "@element-plus/utils@1.0.0 build: `gulp`\nExit status 1",
+      "code": "ELIFECYCLE",
+      "stack": "Error: @element-plus/utils@1.0.0 build: `gulp`\nExit status 1\n    at EventEmitter.<anonymous> (C:\\Program Files\\nodejs\\node_modules\\pnpm\\dist\\pnpm.cjs:108415:20)\n    at EventEmitter.emit (node:events:365:28)\n    at ChildProcess.<anonymous> (C:\\Program Files\\nodejs\\node_modules\\pnpm\\dist\\pnpm.cjs:94981:18)\n    at ChildProcess.emit (node:events:365:28)\n    at maybeClose (node:internal/child_process:1067:16)\n    at Socket.<anonymous> (node:internal/child_process:453:11)\n    at Socket.emit (node:events:365:28)\n    at Pipe.<anonymous> (node:net:661:12)"
+    }
+  },
+  "25 error pnpm": {
+    "errno": 1,
+    "code": "ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL",
+    "pkgid": "@element-plus/utils@1.0.0",
+    "stage": "build",
+    "script": "gulp",
+    "pkgname": "@element-plus/utils",
+    "prefix": "D:\\code\\yjcode\\try\\vue3\\packages\\utils",
+    "err": {
+      "name": "pnpm",
+      "message": "@element-plus/utils@1.0.0 build: `gulp`\nExit status 1",
+      "code": "ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL",
+      "stack": "Error: @element-plus/utils@1.0.0 build: `gulp`\nExit status 1\n    at EventEmitter.<anonymous> (C:\\Program Files\\nodejs\\node_modules\\pnpm\\dist\\pnpm.cjs:108415:20)\n    at EventEmitter.emit (node:events:365:28)\n    at ChildProcess.<anonymous> (C:\\Program Files\\nodejs\\node_modules\\pnpm\\dist\\pnpm.cjs:94981:18)\n    at ChildProcess.emit (node:events:365:28)\n    at maybeClose (node:internal/child_process:1067:16)\n    at Socket.<anonymous> (node:internal/child_process:453:11)\n    at Socket.emit (node:events:365:28)\n    at Pipe.<anonymous> (node:net:661:12)"
+    }
+  }
+}
