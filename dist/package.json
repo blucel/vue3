@@ -1,0 +1,17 @@
+{
+  "name": "ya-plus",
+  "version": "1.0.0",
+  "private": false,
+  "description": "",
+  "main": "index.js",
+  "module": "index.esm.js",
+  "style": "theme-chalk/css/index.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vueuse/core": "^8.6.0"
+  }
+}
