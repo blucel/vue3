@@ -13,7 +13,8 @@
     "dev": "pnpm -C play dev",
     "build": "gulp -f build/gulpfile.ts",
     "clean": "pnpm run clean:dist",
-    "clean:dist": "rimraf dist"
+    "clean:dist": "rimraf dist",
+    "publish": "sh ./script/release.sh"
   },
   "keywords": [],
   "author": "",
