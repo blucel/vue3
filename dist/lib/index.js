@@ -2,7 +2,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var components = require('element-plus/lib/components');
+var components = require('ya-plus/lib/components');
 
 function _interopNamespace(e) {
   if (e && e.__esModule) return e;
@@ -25,7 +25,6 @@ function _interopNamespace(e) {
 var components__namespace = /*#__PURE__*/_interopNamespace(components);
 
 const install = (app) => {
-    console.log(components__namespace, 'componentscomponentscomponents');
     Object.entries(components__namespace).forEach(([name, component]) => {
         return app.component(name, component);
     });

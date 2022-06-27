@@ -4,7 +4,7 @@
  * @Author: 李佐宁
  * @Date: 2022-06-24 10:09:25
  * @LastEditors: 李佐宁
- * @LastEditTime: 2022-06-24 10:49:14
+ * @LastEditTime: 2022-06-24 17:36:21
  */
 import { nodeResolve } from '@rollup/plugin-node-resolve' // 处理文件路径
 import commonjs from '@rollup/plugin-commonjs' // 将 CommonJS 模块转换为 ES6
@@ -24,7 +24,7 @@ const buildFull = async () => {
     external: (id) => /^vue/.test(id), // 打包的时候不打包vue代码
   }
 
-  // esm umd
+  // 打包配置
   const buildConfig = [
     {
       format: 'umd', // 打包的格式
@@ -41,9 +41,7 @@ const buildFull = async () => {
       file: path.resolve(outDir, 'index.esm.js'),
     },
   ]
-
   let bundle = await rollup(config)
-
   return Promise.all(
     buildConfig.map((option) => {
       bundle.write(option as OutputOptions)
@@ -51,8 +49,12 @@ const buildFull = async () => {
   )
 }
 
+/**
+ * @description: 打包入口文件
+ * @return {*}
+ */
 async function buildEntry() {
-  // 读取w-plus目录下的所有内容，包括目录和文件
+  // 读取ya-plus目录下的所有内容，包括目录和文件
   const entryFiles = await fs.readdir(wpRoot, { withFileTypes: true })
 
   // 过滤掉 不是文件的内容和package.json文件  index.ts 作为打包入口
@@ -64,7 +66,7 @@ async function buildEntry() {
   const config = {
     input: entryPoints,
     plugins: [nodeResolve(), vue(), typescript()],
-    external: (id: string) => /^vue/.test(id) || /^@element-plus/.test(id),
+    external: (id: string) => /^vue/.test(id) || /^@ya-plus/.test(id),
   }
   const bundle = await rollup(config)
   return Promise.all(
@@ -78,5 +80,4 @@ async function buildEntry() {
   )
 }
 
-// gulp适合流程控制和代码的转义  没有打包的功能
 export const buildFullComponent = parallel(buildFull, buildEntry)

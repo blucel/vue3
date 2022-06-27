@@ -1,8 +1,10 @@
 {
-  "name": "vue3",
+  "name": "ya-plus",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "style": "dist/theme-chalk/css/index.css",
   "workspaces": [
     "packages/*",
     "play"
@@ -17,9 +19,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@element-plus/components": "workspace:*",
-    "@element-plus/theme-chalk": "workspace:*",
-    "@element-plus/utils": "workspace:*"
+    "@ya-plus/components": "workspace:*",
+    "@ya-plus/theme-chalk": "workspace:*",
+    "@ya-plus/utils": "workspace:*"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.0",

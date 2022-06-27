@@ -1,8 +1,7 @@
-import * as components from 'element-plus/es/components';
-export * from 'element-plus/es/components';
+import * as components from 'ya-plus/es/components';
+export * from 'ya-plus/es/components';
 
 const install = (app) => {
-    console.log(components, 'componentscomponentscomponents');
     Object.entries(components).forEach(([name, component]) => {
         return app.component(name, component);
     });

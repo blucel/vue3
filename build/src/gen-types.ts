@@ -4,7 +4,7 @@
  * @Author: 李佐宁
  * @Date: 2022-06-24 10:52:18
  * @LastEditors: 李佐宁
- * @LastEditTime: 2022-06-24 10:52:40
+ * @LastEditTime: 2022-06-27 11:32:51
  */
 import {
   outDir,
@@ -18,8 +18,12 @@ import glob from 'fast-glob'
 import { Project, ModuleKind, ScriptTarget, SourceFile } from 'ts-morph'
 import path from 'path'
 import fs from 'fs/promises'
+import { copy } from 'fs-extra'
 import { parallel, series } from 'gulp'
 
+/**
+ * @description: 获取type文件路口
+ */
 export const genEntryTypes = async () => {
   const files = await glob('*.ts', {
     cwd: wpRoot,
@@ -57,27 +61,26 @@ export const genEntryTypes = async () => {
       await fs.mkdir(path.dirname(filepath), { recursive: true })
       await fs.writeFile(
         filepath,
-        outputFile.getText().replaceAll('@element-plus', '.'),
+        outputFile.getText().replaceAll('@ya-plus', '.'),
         'utf8'
       )
     }
   })
   await Promise.all(tasks)
 }
+
+/**
+ * @description: 复制type文件到输出地址
+ */
 export const copyEntryTypes = () => {
   const src = path.resolve(outDir, 'entry/types')
-  const copy = (module) =>
+  const copyTypesDefinitions = (module) =>
     parallel(
-      withTaskName(`copyEntryTypes:${module}`, () =>
-        run(
-          `cp -r ${src}/* ${path.resolve(
-            outDir,
-            buildConfig[module].output.path
-          )}/`
-        )
+      withTaskName(`copyTypes:${module}`, () =>
+        copy(src, buildConfig[module].output.path, { recursive: true })
       )
     )
-  return parallel(copy('esm'), copy('cjs'))
+  return parallel(copyTypesDefinitions('esm'), copyTypesDefinitions('cjs'))
 }
 
 export const genTypes = series(genEntryTypes, copyEntryTypes())

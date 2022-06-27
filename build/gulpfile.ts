@@ -4,19 +4,20 @@
  * @Author: 李佐宁
  * @Date: 2022-06-23 10:26:41
  * @LastEditors: 李佐宁
- * @LastEditTime: 2022-06-24 11:09:58
+ * @LastEditTime: 2022-06-27 11:15:36
  */
+import path from 'path'
 import { series, parallel } from 'gulp'
-import { run, withTaskName, wpRoot, outDir } from './src/utils'
+import { run, withTaskName, epPackage, outDir } from './src/utils'
+import { copyFile } from 'fs/promises'
 // 任务执行器 gulp 任务名 就会执行对应的任务
 export * from './src/full-component'
 export * from './src/component'
 import { genTypes } from './src/gen-types'
 
 // gulp 不叫打包，做代码转化 vite
-
-const copySourceCode = () => async () => {
-  await run(`cp ${wpRoot}/package.json ${outDir}/package.json`)
+const copySourceCode = async () => {
+  Promise.all([copyFile(epPackage, path.join(outDir, 'package.json'))])
 }
 
 export default series(
@@ -33,5 +34,5 @@ export default series(
     }),
     withTaskName('buildComponent', () => run('pnpm run build buildComponent'))
   ),
-  parallel(genTypes, copySourceCode())
+  parallel(genTypes, copySourceCode)
 )

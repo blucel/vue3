@@ -1,11 +1,9 @@
-/**
- * 安装依赖 pnpm install fast-glob -w -D
- */
 import { nodeResolve } from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import vue from 'rollup-plugin-vue'
 import typescript from 'rollup-plugin-typescript2'
 import { series, parallel } from 'gulp'
+import { copy } from 'fs-extra'
 import { sync } from 'fast-glob' // 同步查找文件
 import {
   compRoot,
@@ -22,8 +20,11 @@ import glob from 'fast-glob'
 import * as VueCompiler from '@vue/compiler-sfc'
 import fs from 'fs/promises'
 
+/**
+ * @description: 打包每个组件
+ * @return {*}
+ */
 const buildEachComponent = async () => {
-  // 打包每个组件
   // 查找components下所有的组件目录 ["icon"]
   const files = sync('*', {
     cwd: compRoot,
@@ -37,7 +38,7 @@ const buildEachComponent = async () => {
     const config = {
       input,
       plugins: [nodeResolve(), typescript(), vue(), commonjs()],
-      external: (id) => /^vue/.test(id) || /^@element-plus/.test(id), // 排除掉vue和@w-plus的依赖
+      external: (id) => /^vue/.test(id) || /^@ya-plus/.test(id), // 排除掉vue和@w-plus的依赖
     }
     const bundle = await rollup(config)
     const options = Object.values(buildConfig).map((config) => ({
@@ -55,6 +56,10 @@ const buildEachComponent = async () => {
   return Promise.all(builds)
 }
 
+/**
+ * @description: 生成type文件
+ * @return {*}
+ */
 async function genTypes() {
   const project = new Project({
     // 生成.d.ts 我们需要有一个tsconfig
@@ -66,7 +71,7 @@ async function genTypes() {
       outDir: path.resolve(outDir, 'types'),
       baseUrl: projectRoot,
       paths: {
-        '@element-plus/*': ['packages/*'],
+        '@ya-plus/*': ['packages/*'],
       },
       skipLibCheck: true,
       strict: false,
@@ -121,15 +126,23 @@ async function genTypes() {
   await Promise.all(tasks)
 }
 
+/**
+ * @description: 复制type文件到指定目录
+ * @return {*}
+ */
 function copyTypes() {
   const src = path.resolve(outDir, 'types/components/')
-  const copy = (module) => {
+  const copyTypesDefinitions = (module) => {
     let output = path.resolve(outDir, module, 'components')
-    return () => run(`cp -r ${src}/* ${output}`)
+    return () => copy(src, output, { recursive: true })
   }
-  return parallel(copy('es'), copy('lib'))
+  return parallel(copyTypesDefinitions('es'), copyTypesDefinitions('lib'))
 }
 
+/**
+ * @description: rollup打包
+ * @return {*}
+ */
 async function buildComponentEntry() {
   const config = {
     input: path.resolve(compRoot, 'index.ts'),
