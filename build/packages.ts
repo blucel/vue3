@@ -30,7 +30,6 @@ export const buildPackages = (dirname: string, name: string) => {
           .pipe(dest(output))
       }),
       withTaskName(`copy:${dirname}`, () => {
-        console.log(path.resolve(outDir, config.output.name, dirname))
         return src(`${output}/**`).pipe(
           dest(path.resolve(outDir, config.output.name, name))
         )

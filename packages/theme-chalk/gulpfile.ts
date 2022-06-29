@@ -4,7 +4,7 @@
  * @Author: 李佐宁
  * @Date: 2022-06-23 11:08:08
  * @LastEditors: 李佐宁
- * @LastEditTime: 2022-06-24 15:46:27
+ * @LastEditTime: 2022-06-29 14:06:04
  */
 import gulpSass from 'gulp-sass'
 import dartSass from 'sass'
@@ -49,4 +49,4 @@ function copyfullStyle() {
   )
 }
 
-export default series(compile, copyfullStyle)
+export default series(copyfullStyle)

@@ -22,7 +22,8 @@
   "dependencies": {
     "@ya-plus/components": "workspace:*",
     "@ya-plus/theme-chalk": "workspace:*",
-    "@ya-plus/utils": "workspace:*"
+    "@ya-plus/utils": "workspace:*",
+    "element-plus": "^2.2.6"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.0",

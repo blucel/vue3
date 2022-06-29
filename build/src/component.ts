@@ -34,11 +34,7 @@ const buildEachComponent = async () => {
   // 分别把components文件夹下的组件，放到dist/es/components下 和 dist/lib/components
   const builds = files.map(async (file: string) => {
     // 找到每个组件的入口文件 index.ts
-    console.log(file, 'file00000')
-
     const input = path.resolve(compRoot, file, 'index.ts')
-    console.log(input, 'inputinput--------')
-
     const config = {
       input,
       plugins: [nodeResolve(), typescript(), vue(), commonjs()],
