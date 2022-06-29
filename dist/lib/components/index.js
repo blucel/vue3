@@ -2,20 +2,13 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var base = require('./base');
-var template = require('./template');
+var icon = require('./icon');
 
 
 
-Object.keys(base).forEach(function (k) {
+Object.keys(icon).forEach(function (k) {
 	if (k !== 'default' && !exports.hasOwnProperty(k)) Object.defineProperty(exports, k, {
 		enumerable: true,
-		get: function () { return base[k]; }
-	});
-});
-Object.keys(template).forEach(function (k) {
-	if (k !== 'default' && !exports.hasOwnProperty(k)) Object.defineProperty(exports, k, {
-		enumerable: true,
-		get: function () { return template[k]; }
+		get: function () { return icon[k]; }
 	});
 });

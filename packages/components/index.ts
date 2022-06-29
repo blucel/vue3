@@ -6,5 +6,4 @@
  * @LastEditors: 李佐宁
  * @LastEditTime: 2022-06-28 11:31:45
  */
-export * from './base'
-export * from './template'
+export * from './icon'
